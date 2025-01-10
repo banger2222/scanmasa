@@ -1,0 +1,169 @@
+<!DOCTYPE html><html id="html" lang="en" data-bs-theme="light" data-scrapbook-source="https://etherscan.io/token/generic-tokentxns2?m=light&amp;contractAddress=0x944824290cc12f31ae18ef51216a223ba4063092&amp;a=0xaB1E131c6984CC149ef45931073D11Ae35497191&amp;sid=ba9492cb91a96b481df8589d6c997ed3&amp;p=1"><head><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="Description" content="The Ethereum BlockChain Explorer, API and Analytics Platform">
+    <meta name="author" content="etherscan.io">
+    <meta name="keywords" content="ethereum, explorer, ether, search, blockchain, crypto, currency">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="robots" content="noindex">
+    <link rel="shortcut icon" href="favicon2.ico">
+
+    <!-- Font -->
+    
+    
+    <link href="css2.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="theme.min.css">
+
+    <style>
+        #overlay {
+            color: #666666;
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            z-index: 5000;
+            top: 0;
+            left: 0;
+            float: left;
+            text-align: center;
+        }
+
+        .tooltip-inner {
+            max-width: 350px;
+        }
+
+        .noClick {
+            pointer-events: none;
+        }
+
+        .autolink-safari a {
+            pointer-events: none !important;
+            text-decoration: none !important;
+            color: inherit !important;
+        }
+    </style>
+    
+</head>
+
+<body id="body">
+    <div class="card shadow-none border-0 rounded-0">
+        <form method="post" action="https://etherscan.io/token/generic-tokentxns2?m=light&amp;contractAddress=0x944824290cc12f31ae18ef51216a223ba4063092&amp;a=0xaB1E131c6984CC149ef45931073D11Ae35497191&amp;sid=ba9492cb91a96b481df8589d6c997ed3&amp;p=1" id="ctl00">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="G4q1U/hg5MzTOMvfUjOhzRNSRaGf9kOJ5TjO51EHTj2929z1MU5lpCWfx5JA00rAMQ02qwad3wEcgy0MYlP9PxFfjkajT86TGs5YBEzuQls=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="ACE280B2">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="XX3OMxSooR83F7a1bUwWoPO3xzOn9LFHKUAEfZMTY2Y+U6fQyZIH4nsbCBUTJVBRNZSiJv2sZ6gLxeObt15k+ArZbIFTELi8oJoiXtvZukrtNUjUF6huQpyYr8wT/Ii7">
+</div>
+            <input type="hidden" name="hdTokenAddress" id="hdTokenAddress" value="0x944824290cc12f31ae18ef51216a223ba4063092">
+        </form>
+        <input type="hidden" name="hdnAgeText" id="hdnAgeText" value="Age">
+        <input type="hidden" name="hdnDateTimeText" id="hdnDateTimeText" value="Date Time (UTC)">
+        <input type="hidden" name="hdnAgeTitle" id="hdnAgeTitle" value="Click to show Age Format">
+        <input type="hidden" name="hdnDateTimeTitle" id="hdnDateTimeTitle" value="Click to show Datetime Format">
+        
+        <!-- Spinner --><div id="overlay" class="text-center py-10 " style="display: none;"><div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div><div class="small text-muted mt-1">Loading</div></div><!-- End Spinner -->
+
+        <span id="lblWarning"></span>
+
+        <div id="maindiv">
+            <!-- Data Info -->
+            <div id="divDataInfo" class="card-body">
+                <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+                    <p class="mb-0">
+                        <i id="spinwheel" class="fa fa-spin fa-spinner fa-1x fa-pulse me-1" style="display: none;"></i>
+                        <i class="far fa-sort-amount-down me-1" rel="tooltip" data-bs-toggle="tooltip" aria-label="Oldest First"></i>A total of 1 transaction found
+                    </p>
+                    <div class="d-flex flex-wrap align-items-center gap-2">
+                         <button type="button" class="btn btn-sm btn-white text-nowrap" id="btnExportQuickTokenTransferCSV">
+                                                    <i class="far fa-download text-muted me-1"></i> Download Page Data
+                                                 </button><a class="btn btn-sm btn-white Me-1" target="_parent" href="https://etherscan.io/advanced-filter?tkn=0x944824290cc12f31ae18ef51216a223ba4063092&amp;txntype=2&amp;fadd=0xaB1E131c6984CC149ef45931073D11Ae35497191&amp;tadd=0xaB1E131c6984CC149ef45931073D11Ae35497191">
+                                                    <i class="far fa-filters Me-0.5"></i> Advanced Filter
+                                                  </a>
+                        <nav aria-label="page navigation">
+                            <ul class="pagination pagination-sm mb-0"><li class="page-item disabled"><span class="page-link">First</span></li><li class="page-item disabled"><span class="page-link px-3"><i class="fa fa-chevron-left small"></i></span><span class="sr-only">Previous</span></li><li class="page-item disabled"><span class="page-link text-nowrap">Page 1 of 1</span></li><li class="page-item disabled"><span class="page-link px-3"><i class="fa fa-chevron-right small"></i></span><span class="sr-only">Previous</span></li><li class="page-item disabled"><span class="page-link">Last</span></li>
+                        </ul></nav>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- End Data Info -->
+
+            <!-- Table -->
+            <div class="table-responsive">
+                <table class="table mb-0">
+                    <thead id="theadTokenTxnTable" class="text-nowrap">
+                        <tr>
+                            <th scope="col" width="10" class="text-center">
+                                <i class="far fa-question-circle text-muted" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content="See preview of the transaction details."></i>
+                            </th>
+                            <th scope="col">
+                                Transaction Hash
+                            </th>
+                            <th scope="col" data-highlight="">
+                                <div class="d-flex align-items-center gap-2">
+                                    <span class="text-nowrap">Method <i class="far fa-question-circle text-muted" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content="Function executed based on decoded input data. For unidentified functions, method ID is displayed instead."></i>
+                                    </span>
+                                </div>
+                            </th>
+                            <th scope="col">
+                                Block
+                            </th>
+                            <th scope="col">
+                                <a href="javascript:" id="lnkTokenTxnsAgeDateTime" data-bs-toggle="tooltip">Age</a>
+                            </th>
+                            <th scope="col" data-highlight="">
+                                From
+                            </th>
+                            <th scope="col" width="30"></th>
+                            <th scope="col" data-highlight="">
+                                To
+                            </th>
+                            <th id="colHeaderValue" scope="col">
+                                <span id="spanHeaderValue">
+                                    <a href="javascript:" id="headerAmountValue" data-bs-toggle="tooltip" data-bs-trigger="hover">Amount</a><i id="tooltipAmountValue" style="display:none;" class="far fa-question-circle text-muted ms-1" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content="Value displayed based on latest available exchange rate."></i>
+                                </span>
+                                
+                            </th>
+
+                            
+                            
+                            
+                        </tr>
+                    </thead>
+                    <tbody class="align-middle text-nowrap">
+                        <tr><td><button type="button" class="js-tnx-preview btn btn-sm btn-white fs-70x content-center mx-auto myFnExpandBox" style="width: 1.75rem; height: 1.75rem;" data-bs-content-id="js-tnx-preview" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-trigger="manual" data-bs-html="true" data-initialized="false" data-bs-content="<i class='fas fa-circle-notch fa-spin text-primary fa-2x'></i>" data-bs-custom-class="popover-preview">  
+                <i class="far fa-eye"></i>
+            </button></td><td><span class="d-flex align-items-center gap-1 myFnExpandBox_searchVal"><a class="hash-tag text-truncate" style="max-width:7rem;" href="https://etherscan.io/tx/0x9a8fa39aa4b1499b02da59a710f3ec908d504968cb742fb34e4f74085394b79c" target="_parent">0x9a8fa39aa4b1499b02da59a710f3ec908d504968cb742fb34e4f74085394b79c</a><a class="js-clipboard link-secondary  " href="javascript:" data-clipboard-text="0x9a8fa39aa4b1499b02da59a710f3ec908d504968cb742fb34e4f74085394b79c" data-bs-toggle="tooltip" data-bs-trigger="hover" data-hs-clipboard-options="{ &quot;type&quot;: &quot;tooltip&quot;, &quot;successText&quot;: &quot;Copied!&quot;, &quot;classChangeTarget&quot;: &quot;#linkIcon_tx_1&quot;, &quot;defaultClass&quot;: &quot;fa-copy&quot;, &quot;successClass&quot;: &quot;fa-check&quot; }" aria-label="Copy Transaction Hash"><i id="linkIcon_tx_1" class="far fa-copy fa-fw"></i> </a></span></td><td class="" style="--bs-border-radius: 0.375rem;"><span style="max-width: 95px;" class="d-block badge bg-light border border-dark dark:border-white border-opacity-10 text-dark fw-normal text-truncate w-100 py-1.5" data-bs-toggle="tooltip" data-bs-boundary="viewport" data-bs-html="true" data-title="Transfer">Transfer</span></td><td><a href="https://etherscan.io/block/21296292" target="_parent">21296292</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-bs-toggle="tooltip" data-bs-title="41 days ago">2024-11-29 22:22:11</span></td><td style="" class="showAge "><span rel="tooltip" data-bs-toggle="tooltip" data-bs-title="2024-11-29 22:22:11">41 days ago</span></td><td class="showLocalDate" style="display:none !important;"><span rel="tooltip" data-bs-toggle="tooltip" data-bs-title="41 days ago">1732918931</span></td><td style="--bs-border-radius: 0.375rem;"><div class="d-flex align-items-center gap-1"><div class="d-flex align-items-center gap-1 dom-texthighlight border px-1 mx-n1 border-white" style="--bs-border-opacity: 0;"><img src="kucoingray_32.png" class="filter-grayscale mt-n0.5 " width="13" data-bs-toggle="tooltip" data-bs-title="KuCoin" alt="KuCoin"><a class="hash-tag text-truncate" href="https://etherscan.io/token/0x944824290cc12f31ae18ef51216a223ba4063092?a=0x58edf78281334335effa23101bbe3371b6a36a51" target="_parent" data-bs-toggle="tooltip" data-bs-trigger="hover">KuCoin 20</a></div> <a class="js-clipboard link-secondary  " href="javascript:" data-clipboard-text="0x58edF78281334335EfFa23101bBe3371b6a36A51" data-bs-toggle="tooltip" data-bs-trigger="hover" data-hs-clipboard-options="{ &quot;type&quot;: &quot;tooltip&quot;, &quot;successText&quot;: &quot;Copied!&quot;, &quot;classChangeTarget&quot;: &quot;#linkIcon_f_tx_1&quot;, &quot;defaultClass&quot;: &quot;fa-copy&quot;, &quot;successClass&quot;: &quot;fa-check&quot; }" aria-label="Copy Address"><i id="linkIcon_f_tx_1" class="far fa-copy fa-fw"></i> </a></div></td><td><span class="badge bg-success bg-opacity-10 border border-success border-opacity-25 text-success fs-70x text-uppercase w-100 py-1.5">IN</span></td><td style="--bs-border-radius: 0.375rem;"><div class="d-flex align-items-center gap-1"> <span data-bs-toggle="tooltip"><span data-highlight-target="0xaB1E131c6984CC149ef45931073D11Ae35497191" class="border px-1 mx-n1 border-white" style="--bs-border-opacity: 0;">0xaB1E131c...e35497191</span></span><a class="js-clipboard link-secondary  " href="javascript:" data-clipboard-text="0xaB1E131c6984CC149ef45931073D11Ae35497191" data-bs-toggle="tooltip" data-bs-trigger="hover" data-hs-clipboard-options="{ &quot;type&quot;: &quot;tooltip&quot;, &quot;successText&quot;: &quot;Copied!&quot;, &quot;classChangeTarget&quot;: &quot;#linkIcon_t_tx_1&quot;, &quot;defaultClass&quot;: &quot;fa-copy&quot;, &quot;successClass&quot;: &quot;fa-check&quot; }" aria-label="Copy Address"><i id="linkIcon_t_tx_1" class="far fa-copy fa-fw"></i> </a></div></td><td><span class="td_showAmount" data-bs-toggle="tooltip" data-bs-title="909.1 | $152.99">909.1</span><span class="td_showValue" style="display:none" data-bs-toggle="tooltip" data-bs-title="909.1 | $152.99 ">$152.99</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- End Table -->
+
+            <!-- Table Footer -->
+            <div id="divCardFooterTxns" class="card-footer d-flex justify-content-md-end align-items-center text-secondary">
+                <div class="d-inline-block">
+                    <ul class="pagination pagination-sm mb-0"><li class="page-item disabled"><span class="page-link">First</span></li><li class="page-item disabled"><span class="page-link px-3"><i class="fa fa-chevron-left small"></i></span><span class="sr-only">Previous</span></li><li class="page-item disabled"><span class="page-link text-nowrap">Page 1 of 1</span></li><li class="page-item disabled"><span class="page-link px-3"><i class="fa fa-chevron-right small"></i></span><span class="sr-only">Previous</span></li><li class="page-item disabled"><span class="page-link">Last</span></li>
+                </ul></div>
+            </div>
+            <!-- End Table Footer -->
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+<!-- JS Init. -->
+
+
+
+
+
+</body></html>
